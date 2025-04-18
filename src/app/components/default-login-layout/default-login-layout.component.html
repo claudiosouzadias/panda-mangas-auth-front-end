@@ -1,20 +1,34 @@
 <main>
         <!--Left Section whit buttons and assignats-->
-    <section>
+    <section class="form-section">
         <!--Title, Name and logo-->
         <img src="/assets/svg/logo.svg" alt="Panda mangas logo"/>
-        <h2></h2>
-        
-        <!--Button Login or Register-->
-        <button></button>
-        <!--Divisor-->
-        <div>
-            <span>or</span>
+        <h2>
+            {{title}}
+        </h2>
+
+        <!--Puting where the forms will be placed-->
+        <ng-content></ng-content>
+
+        <!--Button Login and Register-->
+        <div class="btn-wrapper">
+            <button class="btn-primary">
+                {{primaryBtnText}}
+            </button>
+            <!--Divisor-->
+            <div class="divider">
+                <div></div>
+                <span>or</span>
+                <div></div>
+            </div>
+            <button class="btn-secondary">
+                {{secondaryBtnText}}
+            </button>
         </div>
-        <button></button>
+        
     </section>
     <!--Right Section whit a main text and big panda image-->
-    <section>
+    <section class="main-section">
         <h1>Read Whit Us!</h1>
         <img src="/assets/svg/main-ilustration.svg" alt="Ilustration of a panda reading a book"/>
     </section>
