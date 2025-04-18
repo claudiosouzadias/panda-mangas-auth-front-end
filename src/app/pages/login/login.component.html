@@ -1,3 +1,40 @@
-<app-default-login-layout>
     <!--Using Default Login Layout-->
+<app-default-login-layout
+    title="Login into your account"
+    primaryBtnText="Login Now"
+    secondaryBtnText="Sign up Now"
+    (submit)="submit()"
+    (navigate)="navigate()"
+    [disablePrimaryBtn]="!loginForm.valid"
+>
+    <div class="form-wrapper">
+        <!--Creating forms-->
+        <form [formGroup]="loginForm">
+            
+            <app-primary-input
+                formControlName="email"
+                type="email"
+                inputName="email"
+                label="Email"
+                placeHolder="panda@gmail.com"   
+            >
+                <img src="/assets/svg/email-icon.svg" alt="Email Icon">
+            </app-primary-input>
+
+        <app-primary-input
+        formControlName="password"
+        type="password"
+        inputName="password"
+        label="Your Password"
+        placeHolder="Enter Your Password"   
+        >
+            <img src="/assets/svg/password-icon.svg" alt="Password Icon">
+        </app-primary-input>
+
+        <span>Forgot password?</span>
+
+        </form>
+
+    </div>
+    
 </app-default-login-layout>

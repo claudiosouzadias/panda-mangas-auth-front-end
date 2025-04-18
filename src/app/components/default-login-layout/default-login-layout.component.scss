@@ -17,6 +17,11 @@ main{
     
     .main-section{
 
+        h1{
+            font-family: "Syne Mono",sans-serif;
+            font-size: 50px;
+        }
+
         gap: 8px;
 
         flex-grow: 1;
@@ -28,13 +33,13 @@ main{
         padding: 0 35px;
 
         img{
-            margin-bottom: 30px;
+            margin-bottom: 10px;
         }
 
         h2{
             font-size: 20px;
             font-weight: bold;
-            margin-bottom: 45px;
+            margin-bottom: 30px;
         }
 
         .btn-wrapper{
@@ -74,6 +79,10 @@ main{
                 background-color: transparent;
                 padding: 12px 12px;
                 cursor: pointer;
+
+                &:disabled{
+                    opacity: 0.6;
+                }
     
                 &.btn-primary{
                     background-color: $primary-color;
