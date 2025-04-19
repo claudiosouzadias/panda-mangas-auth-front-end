@@ -9,10 +9,6 @@ Authlogin for Panda Mangas WebSite, made based on a YouTube video by <a href="ht
 
   - `Angular`    
 
-# 🛠️ Abrir e rodar o projeto
-
-Ao baixar o arquivo você pode executa-lo com qualquer editor compativel, neste projeto foi usado Visual Studio Code.
-
 ![image](https://github.com/user-attachments/assets/746c8f28-a748-4a6b-bfbf-8775366bd4b4)
 
 ![image](https://github.com/user-attachments/assets/e51ed124-fabd-4cf8-b5d3-918bfd41a090)
